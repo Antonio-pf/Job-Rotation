@@ -2,10 +2,10 @@ public class Exer01 {
     public static void main(String[] args) {
 
         int soma = 0, indice = 13;
-        // k = i
-        for(int i = 0; i < 13; i ++  ){
-            i++;
-            soma = soma + i;
+
+        for(int k = 0; k < 13; k ++  ){
+            k++;
+            soma = soma + k;
 
         }
         System.out.println(soma);
