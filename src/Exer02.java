@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class Exer02 {
 
-    static long sequenciaFibo(int numero){
+    static long sequenciaDeFibo(int numero){
         if (numero < 2){
             return numero;
         }else {
-            return  sequenciaFibo(numero - 1) + sequenciaFibo(numero - 2);
+            return  sequenciaDeFibo(numero - 1) + sequenciaDeFibo(numero - 2);
         }
     }
+
 
     public static void main(String[] args) {
 
@@ -18,7 +19,7 @@ public class Exer02 {
         int numeroEscolhidoConvertido = Integer.parseInt(numeroEscolhido);
 
         for (int i = 0; i < 30; i++){
-            if(numeroEscolhidoConvertido == sequenciaFibo(i)){
+            if(numeroEscolhidoConvertido == sequenciaDeFibo(i)){
                 System.out.println("Pertence a sequência");
                 break;
             }else{
