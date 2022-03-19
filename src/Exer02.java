@@ -9,6 +9,11 @@ public class Exer02 {
             return  sequenciaDeFibo(numero - 1) + sequenciaDeFibo(numero - 2);
         }
     }
+    static void listaFibo(){
+        for (int i = 1; i < 20; i++){
+            System.out.println(sequenciaDeFibo(i));
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -24,7 +29,6 @@ public class Exer02 {
                 break;
             }else{
                 System.out.println("Não pertence a sequência");
-
             }
         }
     }

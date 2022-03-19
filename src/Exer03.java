@@ -58,7 +58,7 @@ public class Exer03 {
                 }
                 break;
             case "e":
-                System.out.println(Exer02.sequenciaDeFibo(10));
+                Exer02.listaFibo();
                 break;
             case "f":
                 for (int i = 0; i < numerosComD.length; i ++){
