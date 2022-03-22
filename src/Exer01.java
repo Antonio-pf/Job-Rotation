@@ -7,7 +7,6 @@ public class Exer01 {
             k++;
             soma = soma + k;
 
-
         }
         System.out.println(soma);
     }

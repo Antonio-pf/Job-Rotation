@@ -9,6 +9,7 @@ public class Exer05 {
         System.out.println("Digite uma palavra: ");
         palavra = scan.next();
 
+
         for(int i = palavra.length() - 1; i >= 0; i--){//começa do final para o começo
             palavraInversa = palavraInversa + palavra.charAt(i);
 

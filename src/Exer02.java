@@ -15,7 +15,6 @@ public class Exer02 {
         }
     }
 
-
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -23,10 +22,12 @@ public class Exer02 {
         String numeroEscolhido = scan.next();
         int numeroEscolhidoConvertido = Integer.parseInt(numeroEscolhido);
 
+        boolean pertence = true;
+
+
         for (int i = 0; i < 30; i++){
             if(numeroEscolhidoConvertido == sequenciaDeFibo(i)){
-                System.out.println("Pertence a sequência");
-                break;
+
             }else{
                 System.out.println("Não pertence a sequência");
             }

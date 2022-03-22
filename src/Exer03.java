@@ -8,7 +8,7 @@ public class Exer03 {
 
         DecimalFormat df = new DecimalFormat("##");
         Scanner scan = new Scanner(System.in);
-        String numerosComD [] = {"2","10","12","16","17","18","19","200","201","202","203","204"};
+        String numerosComIniciaisD [] = {"2","10","12","16","17","18","19","200","201","202","203","204"};
 
         String opcao = "";
         System.out.println("Escolha:");
@@ -33,7 +33,6 @@ public class Exer03 {
                 for (int i = 0; i <= 20; i++) {
                     System.out.println(contador);
                     contador = contador + contador;
-
                 }
                 break;
             case "c":
@@ -43,7 +42,6 @@ public class Exer03 {
                     double sequencia = Math.pow(contador, 2);
 
                     System.out.println(df.format(sequencia));
-
                 }
                 break;
 
@@ -52,17 +50,20 @@ public class Exer03 {
                 contador = 2;
                 for (int i = 2; i <= 20; i++) {
 
-                    double sequencia = Math.pow(contador,i);
+
+                    double sequencia = Math.pow((contador),2);
+                    contador = contador + 2;
 
                     System.out.println(df.format(sequencia));
+                    System.out.println(contador);
                 }
                 break;
             case "e":
                 Exer02.listaFibo();
                 break;
             case "f":
-                for (int i = 0; i < numerosComD.length; i ++){
-                    System.out.println(numerosComD[i]);
+                for (int i = 0; i < numerosComIniciaisD.length; i ++){
+                    System.out.println(numerosComIniciaisD[i]);
                 }
                 break;
         }
